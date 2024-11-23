@@ -1,50 +1,23 @@
-// script.js
+function searchDestinations() {
+  let input = document.getElementById('searchInput').value;
+  alert('Searching for: ' + input);
+  // Implement search functionality here
+}
 
-// Sample Data
-const recommendations = [
-    {
-      name: "Paris, France",
-      description: "The city of lights and romance.",
-      image: "https://via.placeholder.com/150",
-    },
-    {
-      name: "Tokyo, Japan",
-      description: "A vibrant mix of tradition and technology.",
-      image: "https://via.placeholder.com/150",
-    },
-    {
-      name: "Cape Town, South Africa",
-      description: "Breathtaking landscapes and wildlife.",
-      image: "https://via.placeholder.com/150",
-    },
+function getPersonalizedSuggestions() {
+  // Example of how AI can be used to generate personalized suggestions
+  const suggestions = [
+      'Suggestion 1: Visit the beaches of Hawaii.',
+      'Suggestion 2: Explore the mountains of Colorado.',
+      'Suggestion 3: Discover the history of Rome.'
   ];
-  
-  // Function to Generate Cards
-  function displayRecommendations(data) {
-    const container = document.getElementById("recommendations");
-    container.innerHTML = ""; // Clear any existing content
-    data.forEach((destination) => {
-      const card = document.createElement("div");
-      card.classList.add("card");
-      card.innerHTML = `
-        <img src="${destination.image}" alt="${destination.name}">
-        <h3>${destination.name}</h3>
-        <p>${destination.description}</p>
-      `;
-      container.appendChild(card);
-    });
-  }
-  
-  // Handle Search
-  document.getElementById("searchForm").addEventListener("submit", (e) => {
-    e.preventDefault();
-    const query = document.getElementById("searchInput").value.toLowerCase();
-    const filtered = recommendations.filter((destination) =>
-      destination.name.toLowerCase().includes(query)
-    );
-    displayRecommendations(filtered.length ? filtered : recommendations);
+
+  let suggestionsContainer = document.getElementById('suggestions');
+  suggestions.forEach(suggestion => {
+      let suggestionElement = document.createElement('p');
+      suggestionElement.textContent = suggestion;
+      suggestionsContainer.appendChild(suggestionElement);
   });
-  
-  // Initialize Recommendations
-  displayRecommendations(recommendations);
-  
+}
+
+document.addEventListener('DOMContentLoaded', getPersonalizedSuggestions);

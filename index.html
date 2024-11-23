@@ -1,40 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>AI Travel Guide</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Travel Guide</title>
+    <link rel="stylesheet" href="styles/styles.css">
 </head>
 <body>
-  <header class="header">
-    <h1>AI Travel Guide</h1>
-    <p>Plan your perfect trip with AI-powered recommendations!</p>
-  </header>
-
-  <main class="main">
-    <!-- Search Section -->
-    <section class="search-section">
-      <h2>Find Your Next Destination</h2>
-      <form class="search-form" id="searchForm">
-        <input type="text" placeholder="Enter a city or country" id="searchInput">
-        <button type="submit">Search</button>
-      </form>
+    <header>
+        <div class="logo"><h1>AI Travel Guide</h1></div>
+        <nav>
+          <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">About Us</a></li>
+              <li><a href="destinations.html">Destinations</a></li>
+              <li><a href="blog.html">Blog</a></li>
+              <li><a href="footer">Contact</a></li>
+          </ul>
+      </nav>
+        <div class="search-bar">
+            <input type="text" placeholder="Search destinations..." id="searchInput">
+            <button onclick="searchDestinations()">Search</button>
+        </div>
+    </header>
+    <section class="hero">
+        <h1>Welcome to AI Travel Guide</h1>
+        <button>Explore Destinations</button>
     </section>
-
-    <!-- Recommendations -->
-    <section class="recommendations">
-      <h2>Top Recommendations</h2>
-      <div class="card-container" id="recommendations">
-        <!-- Cards will be generated dynamically -->
-      </div>
+    <section class="popular-destinations">
+        <h2>Popular Destinations</h2>
+        <div class="destination-card">
+            <img src="destination1.jpg" alt="Destination 1">
+            <h3>Destination 1</h3>
+            <p>Explore the beauty of this amazing place.</p>
+        </div>
+        <div class="destination-card">
+            <img src="destination2.jpg" alt="Destination 2">
+            <h3>Destination 2</h3>
+            <p>Discover the hidden gems of this destination.</p>
+        </div>
     </section>
-  </main>
-
-  <footer class="footer">
-    <p>&copy; 2024 AI Travel Guide. All rights reserved.</p>
-  </footer>
-
-  <script src="script.js"></script>
+    <section class="personalized-suggestions">
+        <h2>Personalized Suggestions</h2>
+        <div id="suggestions"></div>
+    </section>
+    <section class="travel-blog">
+        <h2>Travel Blog</h2>
+        <div class="blog-post">
+            <h3>Post Title 1</h3>
+            <p>Short description of the blog post.</p>
+        </div>
+    </section>
+    <footer>
+        <p>Contact Information</p>
+        <p>Social Media Links</p>
+        <p>Subscribe to Newsletter</p>
+    </footer>
+    <script src="script.js"></script>
+    <script>window.aichatbotApiKey="cbe4de53-7f22-4adf-9fd1-1fe920c83a3d"; window.aichatbotProviderId="f9e9c5e4-6d1a-4b8c-8d3f-3f9e9c5e46d1";</script><script src="https://script.chatlab.com/aichatbot.js" id="cbe4de53-7f22-4adf-9fd1-1fe920c83a3d" defer></script>
 </body>
 </html>
