@@ -16,7 +16,7 @@ header {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
-.header .logo{
+.header .logo {
   font-size: 2rem;
   font-weight: bold;
   color: #007BFF;
@@ -59,7 +59,8 @@ header nav ul li a:hover {
   background-color: #222;
   color: white;
 }
-.search-bar button{
+
+.search-bar button {
   height: 2rem;
   background-color: #007BFF;
   color: white;
@@ -71,15 +72,14 @@ header nav ul li a:hover {
   z-index: 1;
   text-transform: uppercase;
 }
+
 .search-bar button:hover {
   background-color: #0056b3;
 }
+
 .hero {
-  background: url('hero.jpg') no-repeat center center;
+  background: url('foto/hero.jpg') no-repeat center center;
   background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
   background-size: cover;
   color: white;
   text-align: center;
@@ -130,18 +130,47 @@ header nav ul li a:hover {
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
 }
 
-.destination-card, .blog-post {
+.slider {
+  position: relative;
+  max-width: 100%;
+  overflow: hidden;
+}
+
+.slider-container {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+.destination-card {
+  min-width: 33.33%; /* Shfaq 3 div-e në të njëjtën kohë */
+  box-sizing: border-box;
+  padding: 20px;
+  text-align: center;
   background: #2b2b2b;
-  padding: 1rem;
-  margin: 1rem 0;
   border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  margin: 1rem; /* Hapesira midis div-eve */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0. 3);
   transition: transform 0.3s, background-color 0.3s;
 }
 
-.destination-card:hover, .blog-post:hover {
+.destination-card:hover {
   transform: translateY(-5px);
   background-color: #333;
+}
+
+.destination-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px 10px 0 0; /* Rrethimi i imazhit */
+}
+
+.destination-card h3 {
+  margin: 10px 0;
+  color: #e0e0e0;
+}
+
+.destination-card p {
+  color: #b0b0b0;
 }
 
 footer {
@@ -181,6 +210,10 @@ button {
 
   .hero button {
       padding: 0.5rem 1rem;
+  }
+
+  .destination-card {
+      min-width: 100%; /* Shfaq 1 div në ekran të vogël */
   }
 }
 
