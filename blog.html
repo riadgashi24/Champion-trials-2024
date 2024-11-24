@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/blogs.css">
+    <title>Travel Blog</title>
+</head>
+<body>
+
+    <header>
+        <div class="logo"><h1>AI Travel Guide</h1></div>
+        <nav>
+          <ul>
+              <li><a href="../index.html">Home</a></li>
+              <li><a href="../about.html">About Us</a></li>
+              <li><a href="../destinations.html">Destinations</a></li>
+              <li><a href="../blog.html">Blog</a></li>
+              <li><a href="../contact.html">Contact</a></li>
+          </ul>
+        </nav>
+    </header>
+
+<section class="travel-blog">
+    <h2>Travel Blog</h2>
+    <div class="blog-posts" id="blog-posts-container">
+        <!-- Blog posts will be generated here by JavaScript -->
+    </div>
+</section>
+
+<footer>
+    <p>&copy; 2023 Travel Guide. All rights reserved.</p>
+</footer>
+
+<script>
+    // Lista e postimeve të blogut
+    const blogPosts = [
+        {
+            title: "Exploring the Hidden Gems of Italy",
+            description: "Italy is known for its rich history, stunning architecture, and beautiful landscapes. While cities like Rome, Venice, and Florence attract millions of tourists each year, there are many hidden gems waiting to be discovered.",
+            date: "March 15, 2023",
+            image: "blogs/styles/foto/blog1.jpg", // Shtoni rrugën e saktë të imazhit
+            link: "blogs/blog-post1.html"
+        },
+        {
+            title: "A Guide to Traveling on a Budget",
+            description: "Traveling doesn't have to be expensive! With a little planning and creativity, you can explore the world without breaking the bank.",
+            date: "April 10, 2023",
+            image: "blogs/styles/foto/blog2.jpg", // Shtoni rrugën e saktë të imazhit
+            link: "blogs/blog-post2.html"
+        },
+        {
+            title: "The Ultimate Packing List for Your Next Adventure",
+            description: "Packing can be a daunting task, but with the right list, you can ensure you have everything you need for your trip.",
+            date: "May 5, 2023",
+            image: "blogs/styles/foto/blog3.jpg", // Shtoni rrugën e saktë të imazhit
+            link: "blogs/blog-post3.html"
+        }
+    ];
+
+    // Funksioni për të shfaqur postimet e blogut
+    function displayBlogPosts() {
+        const container = document.getElementById('blog-posts-container');
+        container.innerHTML = ''; // Pastroni postimet e mëparshme
+
+        blogPosts.forEach(post => {
+            const postElement = document.createElement('div');
+            postElement.className = 'blog-post';
+            postElement.innerHTML = `
+                <img src="${post.image}" alt="${post.title}">
+                <h3>${post.title}</h3>
+                <p>${post.description}</p>
+                <p class="date">${post.date}</p>
+                <a href="${post.link}" class="read-more">Read More</a>
+            `;
+            container.appendChild(postElement);
+        });
+    }
+
+    // Thirrja e funksionit për të shfaqur postimet e blogut
+    displayBlogPosts();
+</script>
+<script>
+    window.aichatbotApiKey="cbe4de53-7f22-4adf-9fd1-1fe920c83a3d"; 
+    window.aichatbotProviderId="f9e9c5e4-6d1a-4b8c-8d3f-3f9e9c5e46d1"; 
+</script>
+<script src="https://script.chatlab.com/aichatbot.js" id="cbe4de53-7f22-4adf-9fd1-1fe920c83a3d" defer></script>
+
+</body>
+</html>

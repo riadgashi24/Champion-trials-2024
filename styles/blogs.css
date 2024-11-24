@@ -1,0 +1,97 @@
+ /* Shtoni disa stile bazike për faqen */
+ body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+.travel-blog {
+    margin: 20px;
+}
+.blog-post {
+    border: 1px solid #ccc;
+    padding: 15px;
+    margin-bottom: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+}
+.blog-post img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+.date {
+    font-size: 0.9em;
+    color: gray;
+}
+.read-more {
+    display: inline-block;
+    margin-top: 10px;
+    text-decoration: none;
+    color: blue;
+}
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+.travel-blog {
+    margin: 20px;
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: space-between; /* Rregullon hapsirat midis elementeve */
+}
+
+.blog-post {
+    border: 1px solid #ddd; /* Kufiri i lehtë */
+    border-radius: 8px; /* Rrumbullakosja e skajeve */
+    padding: 15px;
+    margin-bottom: 20px;
+    background-color: #333; /* Ngjyra e sfondit */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Hija për theksim */
+    width: calc(30% - 20px); /* Gjerësia e postimeve */
+    transition: transform 0.2s; /* Efekti i kalimit */
+}
+#blog-posts-container{
+    display: flex;
+    justify-content: space-between;
+}
+.blog-post:hover {
+    transform: scale(1.05); /* Zmadhohet kur kalon me maus */
+}
+
+.blog-post img {
+    max-width: 100%; /* Imazhi mbush tërë hapësirën */
+    border-radius: 5px; /* Rrumbullakosja e skajeve të imazhit */
+}
+
+.date {
+    font-size: 0.9em; /* Madhësia e vogël për datën */
+    color: gray; /* Ngjyra gri për datën */
+}
+
+.read-more {
+    display: inline-block;
+    margin-top: 10px;
+    text-decoration: none;
+    color: #007BFF; /* Ngjyra blu për lidhjen */
+    font-weight: bold; /* Pesha e shkronjave */
+}
+
+.read-more:hover {
+    text-decoration: underline; /* Nënvizimi kur kalon me maus */
+}
+@media only screen and (max-width: 480px) {
+    #blog-posts-container{
+        display: flex;
+        flex-direction: column;
+    }
+    .blog-post{
+        width: 90%;
+    }
+  }
+
+  

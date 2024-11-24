@@ -6,62 +6,9 @@ body {
     color: #e0e0e0;
 }
 
-header {
-    background-color: #1f1f1f;
-    color: white;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem 3rem;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-}
-
-.header .logo {
-    font-size: 2rem;
-    font-weight: bold;
-    color: #007BFF;
-}
-
-header nav ul {
-    list-style: none;
-    display: flex;
-    margin: 0;
-    padding: 0;
-}
-
-header nav ul li {
-    margin: 0 1rem;
-}
-
-header nav ul li a {
-    color: white;
-    text-decoration: none;
-    padding: 0.5rem 1rem;
-    transition: background-color 0.3s, color 0.3s;
-}
-
-header nav ul li a:hover {
-    background-color: #007BFF;
-    color: white;
-    border-radius: 5px;
-}
-
-.search-bar {
-    display: flex;
-    align-items: center;
-}
-
-.search-bar input {
-    padding: 0.5rem;
-    margin-right: 0.5rem;
-    border: 1px solid #333;
-    border-radius: 5px;
-    background-color: #222;
-    color: white;
-}
-
 .hero {
-    background: url('foto/hero1.jpg') no-repeat center center;
+    background: url('foto/hero2.jpg') no-repeat center center;
+    background-attachment: fixed;
     background-size: cover;
     color: white;
     text-align: center;
@@ -111,15 +58,17 @@ header nav ul li a:hover {
     border-radius: 10px;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
 }
-.container{
+
+.container {
     display: flex;
+    /* flex-wrap: wrap; Lejon që div-at të rreshtohen në rreshta të rinj */
     justify-content: space-between;
 }
 
 .destination-card {
     background: #2b2b2b;
     padding: 1rem;
-    margin: 1rem 0;
+    margin: 1rem;
     width: 250px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
@@ -128,17 +77,30 @@ header nav ul li a:hover {
     flex-direction: column;
     align-items: center;
 }
-.destination-card img{
+.destination{
+    display: flex;
+    margin: 10px;
+    padding: 10px;
+    border-bottom: 2px solid white;
+}
+.destination-info{
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.destination img {
+    max-width: 400px;
+    max-height: 300px;
     width: 100%;
 }
-
 .destination-card:hover {
     transform: translateY(-5px);
     background-color: #333;
 }
 
 footer {
-    background-color: #1f1f1f;
+    background-color: #1f1f1f; /* Changed to match the theme */
     color: white;
     text-align: center;
     padding: 1rem 3rem;
@@ -174,6 +136,11 @@ button {
 
     .hero button {
         padding: 0.5rem 1rem;
+    }
+
+    .destination-card {
+        width: 100%; /* Zmadhohet për ekranet më të vogla */
+        margin: 1rem 0; /* Margjina vertikale për div-at */
     }
 }
 

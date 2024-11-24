@@ -5,58 +5,90 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Destinations - AI Travel Guide</title>
     <link rel="stylesheet" href="styles/destination.css">
+    <link rel="stylesheet" href="/styles/styles.css">
 </head>
 <body>
     <header>
-        <div class="logo">AI Travel Guide</div>
+        <div class="logo"><h1>AI Travel Guide</h1></div>
         <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About Us</a></li>
-                <li><a href="destinations.html">Destinations</a></li>
-                <li><a href="blog.html">Blog</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-        <div class="search-bar">
-            <input type="text" placeholder="Search destinations..." id="searchInput">
-            <button onclick="searchDestinations()">Search</button>
-        </div>
+          <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">About Us</a></li>
+              <li><a href="destinations.html">Destinations</a></li>
+              <li><a href="blog.html">Blog</a></li>
+              <li><a href="contact.html">Contact</a></li>
+          </ul>
+      </nav>
     </header>
+
     <section class="hero">
         <h1>Explore Our Destinations</h1>
-        <button>Discover More</button>
     </section>
+
     <section class="destinations-list">
         <h2>Top Destinations</h2>
-        <div class="container">
-        <div class="destination-card">
-            <img src="paris.jpg" alt="Bora Bora, French Polynesia">
-            <h3>Bora Bora, French Polynesia</h3>
-            <p>A tropical paradise known for its crystal-clear waters, luxury overwater bungalows, and stunning coral reefs.</p>
+        <div class="destination">
+            <img src="images/bora_bora.jpg" alt="Bora Bora, French Polynesia">
+            <div class="destination-info">
+                <h3>Bora Bora, French Polynesia</h3>
+                <p>A tropical paradise known for its crystal-clear waters, luxury overwater bungalows, and stunning coral reefs.</p>
+            </div>
         </div>
-        <div class="destination-card">
-            <img src="/styles/foto/paris.jpg" alt="Paris, France">
-            <h3>Paris, France</h3>
-            <p>The City of Light is famous for its iconic Eiffel Tower, Louvre Museum, and charming streets.</p>
+        <div class="destination">
+            <img src="images/paris.jpg" alt="Paris, France">
+            <div class="destination-info">
+                <h3>Paris, France</h3>
+                <p>The City of Light is famous for its iconic Eiffel Tower, Louvre Museum, and charming streets.</p>
+            </div>
         </div>
-        <div class="destination-card">
-            <img src="paris.jpg" alt="Bora Bora, French Polynesia">
-            <h3>Bora Bora, French Polynesia</h3>
-            <p>A tropical paradise known for its crystal-clear waters, luxury overwater bungalows, and stunning coral reefs.</p>
+        <div class="destination">
+            <img src="images/tokyo.jpg" alt="Tokyo, Japan">
+            <div class="destination-info">
+                <h3>Tokyo, Japan</h3>
+                <p>A bustling metropolis that blends traditional culture with cutting-edge technology, famous for its food and fashion.</p>
+            </div>
         </div>
-        <div class="destination-card">
-            <img src="destination2.jpg" alt="Paris, France">
-            <h3>Paris, France</h3>
-            <p>The City of Light is famous for its iconic Eiffel Tower, Louvre Museum, and charming streets.</p>
-        </div></div>
-        <!-- Add more destination cards as needed -->
+        <div class="destination">
+            <img src="images/nyc.jpg" alt="New York City, USA">
+            <div class="destination-info">
+                <h3>New York City, USA</h3>
+                <p>The Big Apple is known for its iconic skyline, Broadway shows, and diverse neighborhoods.</p>
+            </div>
+        </div>
+        <div class="destination">
+            <img src="images/sydney.jpg" alt="Sydney, Australia">
+            <div class="destination-info">
+                <h3>Sydney, Australia</h3>
+                <p>Famous for its Sydney Opera House and beautiful harbor, Sydney offers stunning beaches and vibrant nightlife.</p>
+            </div>
+        </div>
+        <div class="destination">
+            <img src="images/rome.jpg" alt="Rome, Italy">
+            <div class="destination-info">
+                <h3>Rome, Italy</h3>
+                <p>The Eternal City is rich in history, known for its ancient ruins, Vatican City, and delicious cuisine.</p>
+            </div>
+        </div>
+        </div>
     </section>
+
     <footer>
-        <p>Contact Information</p>
-        <p>Social Media Links</p>
-        <p>Subscribe to Newsletter</p>
+        <div class="footer-content">
+            <p>Contact Information: info@aitravelguide.com</p>
+            <p>Follow us on Social Media: 
+                <a href="#">Facebook</a>, 
+                <a href="#">Instagram</a>, 
+                <a href="#">Twitter</a>
+            </p>
+            <p>Subscribe to our Newsletter for the latest updates!</p>
+        </div>
     </footer>
-    <script src="script.js"></script>
+
+    <script>
+        window.aichatbotApiKey="cbe4de53-7f22-4adf-9fd1-1fe920c83a3d"; 
+        window.aichatbotProviderId="f9e9c5e4-6d1a-4b8c-8d3f-3f9e9c5e46d1"; 
+    </script>
+    <script src="https://script.chatlab.com/aichatbot.js" id="cbe4de53-7f22-4adf-9fd1-1fe920c83a3d" defer></script>
+
 </body>
 </html>

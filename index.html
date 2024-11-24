@@ -6,7 +6,8 @@
     <meta name="description" content="Your ultimate AI-powered travel guide for discovering amazing destinations.">
     <meta name="keywords" content="travel, guide, destinations, blog">
     <title>AI Travel Guide</title>
-    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="/styles/styles.css">
+    <link rel="stylesheet" href="/styles/index.css">
 </head>
 <body>
     <header>
@@ -17,70 +18,84 @@
               <li><a href="about.html">About Us</a></li>
               <li><a href="destinations.html">Destinations</a></li>
               <li><a href="blog.html">Blog</a></li>
-              <li><a href="contact.html">Contact</a></li> <!-- Updated link -->
+              <li><a href="contact.html">Contact</a></li>
           </ul>
       </nav>
-      <div class="search-bar">
-        <input type="text" id="search-input" placeholder="Search for destinations...">
-        <button id="search-button">Search</button>
-    </div>
     </header>
+    
     <section class="hero">
         <h1>Welcome to AI Travel Guide</h1>
-        <button onclick="window.location.href='destinations.html'">Explore Destinations</button> <!-- Added action -->
+        <button onclick="window.location.href='destinations.html'">Explore Destinations</button>
     </section>
+    
     <section class="popular-destinations">
         <h2>Popular Destinations</h2>
         <div class="slider">
             <div class="slider-container">
                 <div class="destination-card">
-                    <img src="destination1.jpg" alt="A beautiful view of Destination 1">
-                    <h3>Destination 1</h3>
-                    <p>Explore the beauty of this amazing place.</p>
+                    <img src="styles/foto/destination1.jpg" alt="A beautiful view of Destination 1">
+                    <h3>Santorini, Greece</h3>
+                    <p>This island in the Aegean Sea is famous for its stunning sunsets, white-washed buildings, and vibrant blue domes.</p>
                 </div>
                 <div class="destination-card">
-                    <img src="destination2.jpg" alt="Scenic landscape of Destination 2">
-                    <h3>Destination 2</h3>
-                    <p>Discover the hidden gems of this destination.</p>
+                    <img src="styles/foto/destination2.jpg" alt="Scenic landscape of Destination 2">
+                    <h3>Kyoto, Japan</h3>
+                    <p>Known for its historic temples, traditional tea houses, and beautiful cherry blossoms in the spring.</p>
                 </div>
                 <div class="destination-card">
-                    <img src="destination3.jpg" alt="Breathtaking view of Destination 3">
-                    <h3>Destination 3</h3>
-                    <p>Experience the culture and history of this place.</p>
+                    <img src="styles/foto/destination3.jpg" alt="Breathtaking view of Destination 3">
+                    <h3>Maui, Hawaii, USA</h3>
+                    <p>An island paradise with lush landscapes, stunning beaches, and the majestic Haleakalā volcano.</p>
                 </div>
                 <div class="destination-card">
-                    <img src="destination4.jpg" alt="Stunning scenery of Destination 4">
-                    <h3>Destination 4</h3>
-                    <p>Relax and enjoy the beautiful landscapes.</p>
+                    <img src="styles/foto/destination4.jpg" alt="Stunning scenery of Destination 4">
+                    <h3>Amalfi Coast, Italy</h3>
+                    <p>Renowned for its picturesque coastal towns, steep cliffs, and beautiful Mediterranean views.</p>
                 </div>
                 <div class="destination-card">
                     <img src="destination5.jpg" alt="Amazing view of Destination 5">
-                    <h3>Destination 5</h3>
-                    <p>Enjoy the vibrant atmosphere of this location.</p>
+                    <h3>Banff National Park, Canada</h3>
+                    <p>A haven for nature lovers, with breathtaking mountain scenery, crystal-clear lakes, and abundant wildlife.</p>
                 </div>
                 <div class="destination-card">
                     <img src="destination6.jpg" alt="Charming view of Destination 6">
-                    <h3>Destination 6</h3>
-                    <p>Discover the unique experiences this place offers.</p>
+                    <h3>Paris, France</h3>
+                    <p>The city of love, known for its iconic Eiffel Tower, charming streets, and world-class museums.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    
-    <section class="suggested" id="suggested-section">
-        <h2>Suggested for You</h2>
-        <div class="suggested-container" id="suggested-container">
-            <!-- Sugjerimet do të shtohen këtu nga JavaScript -->
-        </div>
-    </section>
     <section class="travel-blog">
         <h2>Travel Blog</h2>
-        <div class="blog-post">
-            <h3>Post Title 1</h3>
-            <p>Short description of the blog post.</p>
+        <div class="blog-posts" id="blog-posts-container">
+            <div class="blog-post">
+                <img src="blogs/styles/foto/blog1.jpg" alt="Blog Post 1">
+                <div class="right">
+                    <h3>Exploring the Hidden Gems of Italy</h3>
+                    <p>Join us as we uncover the lesser-known, breathtaking locations in Italy that are waiting to be explored.</p>
+                    <button onclick="window.location.href='blogs/blog-post1.html'">Read More</button>
+                </div>
+            </div>
+            <div class="blog-post">
+                <img src="/blogs/styles/foto/blog2.jpg" alt="Blog Post 2">
+                <div class="right">
+                    <h3>A Guide to Traveling on a Budget</h3>
+                    <p>Learn how to travel without breaking the bank with our top tips and tricks for budget-friendly adventures.</p>
+                    <button onclick="window.location.href='blog-post2.html'">Read More</button>   
+                </div>
+            </div>
+            <div class="blog-post">
+                <img src="/blogs/styles/foto/blog3.jpg" alt="Blog Post 3">
+                <div class="right">
+                    <h3>The Ultimate Packing List for Your Next Adventure</h3>
+                    <p>Don’t forget anything on your next trip! Check out our comprehensive packing list to make sure you’re prepared.</p>
+                    <button onclick="window.location.href='blog-post3.html'">Read More</button>
+                </div>
+            </div>
         </div>
     </section>
+
     <footer>
         <p>Contact Information: email@example.com</p>
         <p>Follow us on: 
@@ -90,10 +105,11 @@
         </p>
         <p>Subscribe to our Newsletter: <input type="email" placeholder="Your email"><button>Subscribe</button></p>
     </footer>
+    
     <script src="script.js"></script>
     <script>
         window.aichatbotApiKey="cbe4de53-7f22-4adf-9fd1-1fe920c83a3d"; 
-        window.aichatbotProviderId="f9e9c5e4-6d1a-4b8c-8 d3f-3f9e9c5e46d1"; 
+        window.aichatbotProviderId="f9e9c5e4-6d1a-4b8c-8d3f-3f9e9c5e46d1"; 
     </script>
     <script src="https://script.chatlab.com/aichatbot.js" id="cbe4de53-7f22-4adf-9fd1-1fe920c83a3d" defer></script>
 </body>

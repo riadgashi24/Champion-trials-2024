@@ -4,11 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Us - AI Travel Guide</title>
-    <link rel="stylesheet" href="styles/about.css">
+    <link rel="stylesheet" href="/styles/styles.css">
+    <link rel="stylesheet" href="/styles/about.css">
 </head>
 <body>
-    <header>
-        <div class="logo">AI Travel Guide</div>
+    <header style="height: 70px;">
+        <div class="logo"><h1 style="font-weight: bold;">AI Travel Guide</h1></div>
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
@@ -18,10 +19,6 @@
                 <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
-        <div class="search-bar">
-            <input type="text" placeholder="Search destinations..." id="searchInput">
-            <button onclick="searchDestinations()">Search</button>
-        </div>
     </header>
     <section class="hero about-hero">
         <h1>About Us</h1>
@@ -51,5 +48,10 @@
         <p>Subscribe to Newsletter</p>
     </footer>
     <script src="script.js"></script>
+    <script>
+        window.aichatbotApiKey="cbe4de53-7f22-4adf-9fd1-1fe920c83a3d"; 
+        window.aichatbotProviderId="f9e9c5e4-6d1a-4b8c-8 d3f-3f9e9c5e46d1"; 
+    </script>
+    <script src="https://script.chatlab.com/aichatbot.js" id="cbe4de53-7f22-4adf-9fd1-1fe920c83a3d" defer></script>
 </body>
 </html>
